@@ -60,9 +60,10 @@ class Server{
             } ) ;  
     } 
     listen(){
-/*         this.server.listen(this.port, 
-                           ()=>{ console.log('Servidor corriendo en puerto', this.port);}); */
-           this.server.listen(this.port) };
+         this.server.listen(this.port, 
+                           ()=>{ console.log('Servidor corriendo en puerto', this.port);}) 
+//           this.server.listen(this.port)
+ };
 }
 
 module.exports = Server
